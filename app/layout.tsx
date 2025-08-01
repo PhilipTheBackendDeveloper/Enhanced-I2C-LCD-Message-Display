@@ -1,12 +1,13 @@
-import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
-import './globals.css'
+import type React from "react"
+import type { Metadata } from "next"
+import { GeistSans } from "geist/font/sans"
+import { GeistMono } from "geist/font/mono"
+import "./globals.css"
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: "Arduino LCD Controller",
+  description: "Modern web interface for Arduino LCD display with real-time preview",
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ html {
 }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   )
 }
